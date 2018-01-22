@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Button-Counter-Austin</string>
+    <string name="inc">Increment Value</string>
+    <string name="dec">Decrement Value</string>
+    <string name="reset">Reset Counter</string>
+    <string name="counter_text">Current Count:</string>
 </resources>
