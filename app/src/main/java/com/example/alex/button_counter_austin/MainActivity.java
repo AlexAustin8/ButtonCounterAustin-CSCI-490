@@ -21,6 +21,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         text = this.findViewById(R.id.count_text);
         text.setText(text.getText() + valueOf(counter));
+
+
         incrementButton = this.findViewById(R.id.incrementButton);
         incrementButton.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
@@ -28,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
                 text.setText(getResources().getString(R.string.counter_text) + valueOf(counter));
             }
         });
+
         decrementButton = this.findViewById(R.id.decrementButton);
         decrementButton.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
@@ -35,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
                 text.setText(getResources().getString(R.string.counter_text) + valueOf(counter));
             }
         });
+
         resetButton = this.findViewById(R.id.resetButton);
         resetButton.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
