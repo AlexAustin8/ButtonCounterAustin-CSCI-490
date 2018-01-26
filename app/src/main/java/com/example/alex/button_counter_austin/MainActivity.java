@@ -15,12 +15,28 @@ public class MainActivity extends AppCompatActivity {
     private TextView text;
     private int counter = 0;
 
+
+
+    @Override
+    public void onSaveInstanceState (Bundle savedInstanceState){
+        super.onSaveInstanceState(savedInstanceState);
+        savedInstanceState.putInt("count", counter);
+    }
+    @Override
+    public void onRestoreInstanceState(Bundle savedInstanceState){
+        super.onRestoreInstanceState(savedInstanceState);
+        counter = savedInstanceState.getInt("count");
+        text.setText(getResources().getString(R.string.counter_text)  + valueOf(counter));
+
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         text = this.findViewById(R.id.count_text);
         text.setText(text.getText() + valueOf(counter));
+
 
 
         incrementButton = this.findViewById(R.id.incrementButton);

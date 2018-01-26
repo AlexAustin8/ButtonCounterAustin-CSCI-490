@@ -1,44 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
-    android:layout_height="fill_parent">
+    android:layout_height="fill_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:background="@color/colorAccent"
+    android:orientation="vertical">
 
     <TextView
         android:id="@+id/count_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/counter_text"
         android:paddingRight="10dip"
+        android:text="@string/counter_text"
+        android:fontFamily="cursive"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:visibility="visible" />
 
-                                             />
     <TableLayout
-        android:padding="10dip"
-        android:layout_gravity="center"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content">
-    <TableRow>
-        <Button
-        android:id="@+id/incrementButton"
-        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/inc"/>
-    </TableRow>
-    <TableRow>
-        <Button
-        android:id="@+id/decrementButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/dec"/>
-    </TableRow>
-    <TableRow>
-        <Button
-        android:id="@+id/resetButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/reset"/>
-    </TableRow>
+        android:layout_gravity="center"
+        android:padding="10dip">
+
+        <TableRow android:gravity="center">
+
+            <Button
+                android:id="@+id/incrementButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_shape"
+                android:text="@string/inc" />
+        </TableRow>
+
+        <TableRow android:gravity="center">
+
+            <Button
+                android:id="@+id/decrementButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_shape"
+                android:text="@string/dec" />
+        </TableRow>
+
+        <TableRow android:gravity="center">
+
+            <Button
+                android:id="@+id/resetButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_shape"
+                android:text="@string/reset" />
+        </TableRow>
     </TableLayout>
 
 
