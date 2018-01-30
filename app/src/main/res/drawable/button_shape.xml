@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<shape
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id = "@+id/reset_button_shape"
+    android:padding="16dp"
+    android:shape="oval" >
+    <corners android:radius="6dp" />
+    <gradient android:angle="270" android:endColor="#4ca666" android:startColor="#a73fac" />
+    <stroke android:width="1px" android:color="#00ff2a" />
+</shape>
+
